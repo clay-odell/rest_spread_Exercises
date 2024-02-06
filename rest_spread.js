@@ -27,3 +27,12 @@ const removeRandom = items => {
 const extend = (arr1, arr2) => {
     return [...arr1,...arr2];
 }
+const addKeyVal = (obj, key, val) => {
+    return {...obj, [key]: val};
+}
+const removeKey = (obj, key) => {
+    return {...obj, [key]: undefined};
+}
+const combine = (obj1, obj2) => {
+    return {...obj1,...obj2};
+}
