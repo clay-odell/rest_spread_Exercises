@@ -23,3 +23,7 @@ const removeRandom = items => {
     let index = Math.floor(Math.random() * items.length);
     return [...items.slice(0, index), ...items.slice(index + 1)];
 }
+
+const extend = (arr1, arr2) => {
+    return [...arr1,...arr2];
+}
